@@ -51,8 +51,8 @@ const App = () => {
         <Routes>
           {/* <Route exact path="/" name="Dashboard" element={<Dashboard />} /> */}
           <Route exact path="/" name="All Users" element={<AllUser />} />
-          {/* <Route path="/login" name="Login Page" element={<Login />} />
-          <Route path="/register" name="Register Page" element={<Register />} />
+          <Route path="/login" name="Login Page" element={<Login />} />
+          {/* <Route path="/register" name="Register Page" element={<Register />} />
           <Route path="/unsubscribed" name="Opt-Out Users" element={<Completed />} />
           <Route path="/active" name="SMS Delivered" element={<Pending />} />
           <Route path="/failed" name="Delivery Failed" element={<Failed />} /> */}
