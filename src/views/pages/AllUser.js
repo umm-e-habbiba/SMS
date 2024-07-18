@@ -178,6 +178,9 @@ const AllUser = () => {
                     <CTableHeaderCell scope="col" className="text-center">
                       Messages Sent
                     </CTableHeaderCell>
+                    <CTableHeaderCell scope="col" className="text-center">
+                      Last Message
+                    </CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
                 <CTableBody>
@@ -204,6 +207,11 @@ const AllUser = () => {
                               </CTableDataCell>
                               <CTableDataCell className="text-center align-middle w-auto">
                                 {user.numberOfMessages}
+                              </CTableDataCell>
+                              <CTableDataCell className="text-center align-middle w-auto">
+                                {user.lastMessagedAt
+                                  ? moment(user.lastMessagedAt).format('Do MMMM YYYY')
+                                  : 'Null'}
                               </CTableDataCell>
                             </CTableRow>
                           ))
@@ -235,6 +243,11 @@ const AllUser = () => {
                             </CTableDataCell>
                             <CTableDataCell className="text-center align-middle w-auto">
                               {user.numberOfMessages}
+                            </CTableDataCell>
+                            <CTableDataCell className="text-center align-middle w-auto">
+                              {user.lastMessagedAt
+                                ? moment(user.lastMessagedAt).format('Do MMMM YYYY')
+                                : 'Null'}
                             </CTableDataCell>
                           </CTableRow>
                         ))
