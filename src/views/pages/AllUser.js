@@ -166,46 +166,24 @@ const AllUser = () => {
                     <CTableHeaderCell scope="col" className="text-center">
                       #
                     </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center w-[115px]">
+                    <CTableHeaderCell scope="col" className="text-center">
                       First name
                     </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center w-[115px]">
+                    <CTableHeaderCell scope="col" className="text-center">
                       Last name
                     </CTableHeaderCell>
                     <CTableHeaderCell scope="col" className="text-center">
-                      Phone
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center w-[135px]">
-                      Home Phone
+                      Phone Number
                     </CTableHeaderCell>
                     <CTableHeaderCell scope="col" className="text-center">
-                      Phone2
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center">
-                      Phone3
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center">
-                      Phone4
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center">
-                      Phone5
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center w-[340px]">
                       Address
                     </CTableHeaderCell>
                     <CTableHeaderCell scope="col" className="text-center">
                       State
                     </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center w-[95px]">
+                    <CTableHeaderCell scope="col" className="text-center">
                       Zip code
                     </CTableHeaderCell>
-                    {/* <CTableHeaderCell scope="col" className="text-center">
-                    Date
-                  </CTableHeaderCell>
-                  <CTableHeaderCell scope="col" className="text-center">
-                    Time
-                  </CTableHeaderCell> */}
-                    {/* <CTableHeaderCell scope="col">Actions</CTableHeaderCell> */}
                   </CTableRow>
                 </CTableHead>
                 <CTableBody>
@@ -228,22 +206,7 @@ const AllUser = () => {
                                 {user.lastName}
                               </CTableDataCell>
                               <CTableDataCell className="text-center align-middle">
-                                {user.phoneOne}
-                              </CTableDataCell>
-                              <CTableDataCell className="text-center align-middle">
                                 {user.phoneHome}
-                              </CTableDataCell>
-                              <CTableDataCell className="text-center align-middle">
-                                {user.phoneTwo}
-                              </CTableDataCell>
-                              <CTableDataCell className="text-center align-middle">
-                                {user.phoneThree}
-                              </CTableDataCell>
-                              <CTableDataCell className="text-center align-middle">
-                                {user.phoneFour}
-                              </CTableDataCell>
-                              <CTableDataCell className="text-center align-middle">
-                                {user.phoneFive}
                               </CTableDataCell>
                               <CTableDataCell className="text-center align-middle w-auto">
                                 {user.homeAddress}
@@ -254,26 +217,6 @@ const AllUser = () => {
                               <CTableDataCell className="text-center align-middle">
                                 {user.postalAddress}
                               </CTableDataCell>
-                              {/* <CTableDataCell className="text-center align-middle">
-                        {moment(user.date).format('Do MMMM YYYY')}
-                      </CTableDataCell>
-                      <CTableDataCell className="text-center align-middle">
-                        {moment(user.date).format('h:mm a')}
-                      </CTableDataCell> */}
-                              {/* <CTableDataCell>
-                        <CButton
-                          color="danger"
-                          className="text-white py-2 my-2"
-                          onClick={(e) => {
-                            setDeleteModal(true)
-                            setSmsId(x._id)
-                            setError(false)
-                            setErrorMsg('')
-                          }}
-                        >
-                          <CIcon icon={cilTrash} />
-                        </CButton>
-                      </CTableDataCell> */}
                             </CTableRow>
                           ))
                       ) : (
@@ -300,22 +243,7 @@ const AllUser = () => {
                               {user.lastName}
                             </CTableDataCell>
                             <CTableDataCell className="text-center align-middle">
-                              {user.phoneOne}
-                            </CTableDataCell>
-                            <CTableDataCell className="text-center align-middle">
                               {user.phoneHome}
-                            </CTableDataCell>
-                            <CTableDataCell className="text-center align-middle">
-                              {user.phoneTwo}
-                            </CTableDataCell>
-                            <CTableDataCell className="text-center align-middle">
-                              {user.phoneThree}
-                            </CTableDataCell>
-                            <CTableDataCell className="text-center align-middle">
-                              {user.phoneFour}
-                            </CTableDataCell>
-                            <CTableDataCell className="text-center align-middle">
-                              {user.phoneFive}
                             </CTableDataCell>
                             <CTableDataCell className="text-center align-middle w-auto">
                               {user.homeAddress}
@@ -326,26 +254,6 @@ const AllUser = () => {
                             <CTableDataCell className="text-center align-middle">
                               {user.postalAddress}
                             </CTableDataCell>
-                            {/* <CTableDataCell className="text-center align-middle">
-                      {moment(user.date).format('Do MMMM YYYY')}
-                    </CTableDataCell>
-                    <CTableDataCell className="text-center align-middle">
-                      {moment(user.date).format('h:mm a')}
-                    </CTableDataCell> */}
-                            {/* <CTableDataCell>
-                      <CButton
-                        color="danger"
-                        className="text-white py-2 my-2"
-                        onClick={(e) => {
-                          setDeleteModal(true)
-                          setSmsId(x._id)
-                          setError(false)
-                          setErrorMsg('')
-                        }}
-                      >
-                        <CIcon icon={cilTrash} />
-                      </CButton>
-                    </CTableDataCell> */}
                           </CTableRow>
                         ))
                     )
