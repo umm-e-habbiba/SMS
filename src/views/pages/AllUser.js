@@ -176,13 +176,7 @@ const AllUser = () => {
                       Phone Number
                     </CTableHeaderCell>
                     <CTableHeaderCell scope="col" className="text-center">
-                      Address
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center">
-                      State
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col" className="text-center">
-                      Zip code
+                      Messages Sent
                     </CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
@@ -209,13 +203,7 @@ const AllUser = () => {
                                 {user.phoneHome}
                               </CTableDataCell>
                               <CTableDataCell className="text-center align-middle w-auto">
-                                {user.homeAddress}
-                              </CTableDataCell>
-                              <CTableDataCell className="text-center align-middle">
-                                {user.state}
-                              </CTableDataCell>
-                              <CTableDataCell className="text-center align-middle">
-                                {user.postalAddress}
+                                {user.numberOfMessages}
                               </CTableDataCell>
                             </CTableRow>
                           ))
@@ -246,13 +234,7 @@ const AllUser = () => {
                               {user.phoneHome}
                             </CTableDataCell>
                             <CTableDataCell className="text-center align-middle w-auto">
-                              {user.homeAddress}
-                            </CTableDataCell>
-                            <CTableDataCell className="text-center align-middle">
-                              {user.state}
-                            </CTableDataCell>
-                            <CTableDataCell className="text-center align-middle">
-                              {user.postalAddress}
+                              {user.numberOfMessages}
                             </CTableDataCell>
                           </CTableRow>
                         ))
