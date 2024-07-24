@@ -179,7 +179,7 @@ const AllUser = () => {
                       Messages Sent
                     </CTableHeaderCell>
                     <CTableHeaderCell scope="col" className="text-center">
-                      Last Message
+                      Last Message At
                     </CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
